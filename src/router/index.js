@@ -111,10 +111,13 @@ router.beforeEach((to, from, next) => {
       }
       else if(to.name==='kelas' && currentUser=='staff'){
         next({name:'about'})
-      }
-      else if(to.name==='petugas' && currentUser=='staff'){
+      } else if(to.name==='petugas' && currentUser=='staff'){
         next({name:'about'})
       }
+
+      // else if(to.name==='petugas' && currentUser='staff'){
+      //   next({name:'about'})
+      // }
       else if(to.name==='spp' && currentUser=='staff'){
         next({name:'about'})
       }
